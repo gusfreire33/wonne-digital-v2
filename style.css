@@ -975,6 +975,100 @@ header {
     font-weight: 400;
 }
 
+/* Leadbox CRM */
+.leadbox-section {
+    padding: var(--section-spacing) 0;
+    background: #000000;
+}
+
+.leadbox-box {
+    background: url('Screenshots/Background da caixa de oferta.avif') center/cover no-repeat;
+    border-radius: 24px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    overflow: hidden;
+}
+
+.leadbox-mockup {
+    flex: 1;
+    min-width: 0;
+}
+
+.leadbox-mockup img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+}
+
+.leadbox-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.leadbox-badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #f97316;
+    margin-bottom: 16px;
+}
+
+.leadbox-content h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.leadbox-desc {
+    font-size: 16px;
+    color: #b0b0b0;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.leadbox-highlight {
+    font-size: 17px;
+    color: #d0d0d0;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.leadbox-highlight strong {
+    color: #1a9d7a;
+    font-weight: 700;
+}
+
+.leadbox-garantia {
+    font-size: 13px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+.leadbox-content .cta-button {
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .leadbox-box {
+        flex-direction: column;
+        padding: 32px 20px;
+        gap: 32px;
+    }
+}
+
 /* Método W.I.N */
 .metodo-win {
     padding: var(--section-spacing) 0;

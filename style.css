@@ -978,7 +978,7 @@ header {
 /* Leadbox CRM */
 .leadbox-section {
     padding: var(--section-spacing) 0;
-    padding-top: calc(var(--section-spacing) + 200px);
+    padding-top: calc(var(--section-spacing) + 260px);
     background: #000000;
 }
 
@@ -996,8 +996,8 @@ header {
 }
 
 .leadbox-mockup {
-    width: 90%;
-    margin-top: -55%;
+    width: 105%;
+    margin-top: -65%;
 }
 
 .leadbox-mockup img {

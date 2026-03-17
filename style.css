@@ -1073,25 +1073,27 @@ header {
 
 /* Dashboard Carousel */
 .dashboard-carousel-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: #000000;
     overflow: hidden;
 }
 
 .dashboard-carousel-track {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     width: max-content;
-    animation: dashboardScroll 40s linear infinite;
+    animation: dashboardScroll 45s linear infinite;
 }
 
 .dashboard-carousel-track img {
-    height: 280px;
+    height: 320px;
     width: auto;
-    border-radius: 12px;
-    border: 1px solid #333;
+    border-radius: 16px;
+    border: 2px solid #2a2a2a;
     object-fit: cover;
     flex-shrink: 0;
+    background: #111;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
 }
 
 @keyframes dashboardScroll {

@@ -1239,6 +1239,196 @@ header {
     font-weight: 600;
 }
 
+/* Prova Social YouTube */
+.prova-social-section {
+    padding: var(--section-spacing) 0;
+    background: #000000;
+}
+
+.prova-social-section > .container > h2 {
+    font-size: clamp(26px, 3.2vw, 40px);
+    font-weight: 600;
+    text-align: center;
+    color: #d0d0d0;
+    margin-bottom: 48px;
+    line-height: 1.3;
+}
+
+.prova-social-box {
+    background: url('Screenshots/Background da caixa de oferta.avif') center/cover no-repeat;
+    border-radius: 24px;
+    padding: 48px;
+    display: flex;
+    gap: 32px;
+    align-items: stretch;
+}
+
+.prova-tweet {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.tweet-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.tweet-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-name {
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+}
+
+.tweet-handle {
+    color: #888;
+    font-size: 14px;
+}
+
+.tweet-divider {
+    height: 1px;
+    background: #333;
+    margin-bottom: 20px;
+}
+
+.tweet-text {
+    color: #c0c0c0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.prova-video {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.yt-player-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #111;
+    border: 1px solid #333;
+}
+
+.yt-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.yt-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+}
+
+.yt-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    padding: 20px 12px 8px;
+}
+
+.yt-progress {
+    height: 3px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.yt-progress-played {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 31%;
+    background: #ff0000;
+    border-radius: 2px;
+}
+
+.yt-progress-dot {
+    position: absolute;
+    top: 50%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background: #ff0000;
+    border-radius: 50%;
+}
+
+.yt-controls-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.yt-controls-left,
+.yt-controls-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.yt-ctrl-icon {
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.yt-time {
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.yt-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.yt-views {
+    font-size: 14px;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .prova-social-box {
+        flex-direction: column;
+        padding: 24px;
+    }
+}
+
 /* Close Friends Oferta */
 .close-friends-oferta {
     padding: var(--section-spacing) 0;

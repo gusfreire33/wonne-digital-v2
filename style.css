@@ -370,7 +370,7 @@ header {
 
 /* Stats Section */
 .stats-section {
-    padding: var(--section-spacing) 0;
+    padding: var(--section-spacing) 0 40px;
     background: #000000;
     position: relative;
 }
@@ -1278,7 +1278,7 @@ header {
 
 /* Prova Social YouTube */
 .prova-social-section {
-    padding: var(--section-spacing) 0;
+    padding: 40px 0;
     background: #000000;
 }
 

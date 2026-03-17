@@ -1011,8 +1011,8 @@ header {
 
 /* Leadbox CRM */
 .leadbox-section {
-    padding: var(--section-spacing) 0;
-    padding-top: calc(var(--section-spacing) + 260px);
+    padding: 40px 0;
+    padding-top: calc(40px + 260px);
     background: #000000;
 }
 

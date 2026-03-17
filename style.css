@@ -924,7 +924,7 @@ header {
 
 /* Serviços */
 .servicos {
-    padding: var(--section-spacing) 0;
+    padding: var(--section-spacing) 0 clamp(20px, 3vw, 40px);
     background-color: #000000;
 }
 
@@ -1207,7 +1207,7 @@ header {
 
 /* Método W.I.N */
 .metodo-win {
-    padding: var(--section-spacing) 0;
+    padding: clamp(20px, 3vw, 40px) 0 var(--section-spacing);
     background: #000000;
     position: relative;
 }

@@ -1071,6 +1071,42 @@ header {
     }
 }
 
+/* Dashboard Carousel */
+.dashboard-carousel-section {
+    padding: 60px 0;
+    background: #000000;
+    overflow: hidden;
+}
+
+.dashboard-carousel-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: dashboardScroll 40s linear infinite;
+}
+
+.dashboard-carousel-track img {
+    height: 280px;
+    width: auto;
+    border-radius: 12px;
+    border: 1px solid #333;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@keyframes dashboardScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.dashboard-carousel-track:hover {
+    animation-play-state: paused;
+}
+
 /* Método W.I.N */
 .metodo-win {
     padding: var(--section-spacing) 0;

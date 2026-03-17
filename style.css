@@ -1985,15 +1985,14 @@ header {
 
 .modal-content {
     position: relative;
-    background: #2a2a2a url('Screenshots/Background dos botoes.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 500px;
+    background: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    max-width: 460px;
     width: 90%;
-    padding: 48px 40px;
+    padding: 40px 36px;
     border-radius: 20px;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 24px 64px rgba(0, 0, 0, 0.8);
     z-index: 2;
     animation: slideUp 0.4s ease;
@@ -2035,19 +2034,14 @@ header {
 }
 
 .modal-title {
-    font-size: 28px;
-    font-weight: 900;
-    color: #FFFFFF;
-    margin-bottom: 8px;
-    text-align: center;
-    letter-spacing: -0.5px;
+    display: none;
 }
 
 .modal-subtitle {
-    font-size: 15px;
-    color: var(--text-muted);
+    font-size: 14px;
+    color: #999;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .contact-form {
@@ -2061,37 +2055,36 @@ header {
 
 .form-group label {
     display: block;
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 400;
+    color: #aaa;
     margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 0;
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="tel"] {
     width: 100%;
-    padding: 14px 16px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 12px;
-    color: var(--text-light);
-    font-size: 16px;
+    color: #fff;
+    font-size: 15px;
     font-family: 'Inter', sans-serif;
     transition: all 0.3s ease;
 }
 
 .form-group input:focus {
     outline: none;
-    border-color: var(--accent);
-    background: rgba(255, 255, 255, 0.06);
-    box-shadow: 0 0 0 3px rgba(46, 232, 173, 0.1);
+    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: none;
 }
 
 .form-group input::placeholder {
-    color: #555;
+    color: #666;
 }
 
 .checkbox-group {
@@ -2133,17 +2126,17 @@ header {
 
 .modal-submit-btn {
     width: 100%;
-    padding: 16px;
-    margin-top: 24px;
+    padding: 18px;
+    margin-top: 12px;
     background-image: url('Screenshots/background-botoes-2.avif');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
     color: #FFFFFF;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50px;
-    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;

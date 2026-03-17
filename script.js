@@ -85,12 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const phone = document.getElementById('phone').value;
-        const termsAccepted = document.getElementById('terms').checked;
-
-        if (!termsAccepted) {
-            alert('Por favor, aceite os Termos e Condições para continuar.');
-            return;
-        }
 
         // Dados do lead para enviar ao webhook
         const leadData = {

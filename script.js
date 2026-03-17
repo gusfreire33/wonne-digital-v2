@@ -58,23 +58,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Função de fechar modal com animação
+    function closeModal() {
+        if (!modal.classList.contains('active') || modal.classList.contains('closing')) return;
+        modal.classList.add('closing');
+        setTimeout(() => {
+            modal.classList.remove('active', 'closing');
+            document.body.style.overflow = '';
+        }, 300);
+    }
+
     // Fechar modal ao clicar no X
-    modalClose.addEventListener('click', () => {
-        modal.classList.remove('active');
-        document.body.style.overflow = ''; // Restaura scroll
-    });
+    modalClose.addEventListener('click', closeModal);
 
     // Fechar modal ao clicar no overlay
-    modalOverlay.addEventListener('click', () => {
-        modal.classList.remove('active');
-        document.body.style.overflow = '';
-    });
+    modalOverlay.addEventListener('click', closeModal);
 
     // Fechar modal com ESC
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
+            closeModal();
         }
     });
 
@@ -124,9 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Abre WhatsApp em nova aba
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
 
-        // Fecha o modal
-        modal.classList.remove('active');
-        document.body.style.overflow = '';
+        // Fecha o modal com animação
+        closeModal();
 
         // Limpa o formulário
         contactForm.reset();

@@ -2040,6 +2040,30 @@ header {
     }
 }
 
+.modal.closing .modal-content {
+    animation: slideDown 0.3s ease forwards;
+}
+
+.modal.closing .modal-overlay {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
 .modal-close {
     position: absolute;
     top: 16px;

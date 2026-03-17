@@ -1100,21 +1100,22 @@ header {
 
 @media (max-width: 768px) {
     .leadbox-section {
-        padding-top: calc(var(--section-spacing) + 120px);
+        padding-top: calc(var(--section-spacing) + 80px);
     }
 
     .leadbox-box {
-        padding: 24px 20px 40px;
-        gap: 16px;
+        padding: 24px 16px 36px;
+        gap: 12px;
+        overflow: visible;
     }
 
     .leadbox-mockup {
-        width: 100%;
-        margin-top: -45%;
+        width: 95%;
+        margin-top: -30%;
     }
 
-    .dashboard-carousel-track {
-        animation-duration: 25s !important;
+    .dashboard-carousel-section {
+        display: none !important;
     }
 }
 
@@ -2338,8 +2339,7 @@ footer {
 
     /* Carrossel */
     .testimonials-carousel {
-        display: flex !important;
-        padding: 40px 0;
+        display: none !important;
     }
 
     /* Cases */

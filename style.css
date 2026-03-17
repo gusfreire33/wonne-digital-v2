@@ -39,7 +39,8 @@ body {
     position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 /* Headings usam Manrope (estilo Furion) */
@@ -52,6 +53,8 @@ h1, h2, h3, h4, h5, h6,
 .fundador-info h3,
 .footer-brand {
     font-family: 'Manrope', 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
 /* Animações Tecnológicas */
@@ -342,7 +345,7 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 20px 56px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -386,7 +389,7 @@ header {
     color: var(--text-muted);
     padding: 14px 36px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -476,7 +479,7 @@ header {
 
 .video-footer-text {
     font-size: clamp(16px, 2vw, 22px);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text-light);
     margin: 0;
     line-height: 1.4;
@@ -866,7 +869,7 @@ header {
 
 .o-que-esperar h2 {
     font-size: clamp(28px, 3.5vw, 42px);
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     line-height: 1.4;
     color: #d0d0d0;
@@ -983,7 +986,7 @@ header {
 
 .ofertas-titulo h2 {
     font-size: clamp(28px, 3.5vw, 42px);
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     color: #d0d0d0;
 }
@@ -1040,7 +1043,7 @@ header {
 
 .leadbox-content h2 {
     font-size: clamp(32px, 4vw, 48px);
-    font-weight: 700;
+    font-weight: 600;
     color: #ffffff;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -1062,7 +1065,7 @@ header {
 
 .leadbox-highlight strong {
     color: #1a9d7a;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .leadbox-garantia {
@@ -1233,7 +1236,7 @@ header {
     position: absolute;
     left: 0;
     color: var(--accent);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* Close Friends Oferta */
@@ -1489,7 +1492,7 @@ header {
 
 .oferta-conteudo h3 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 25px;
     color: #FFFFFF;
 }
@@ -1678,7 +1681,7 @@ header {
 
 .faq-question h3 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text-light);
 }
 
@@ -1819,7 +1822,7 @@ header {
 .form-group label {
     display: block;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text-muted);
     margin-bottom: 8px;
     text-transform: uppercase;
@@ -1901,7 +1904,7 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 50px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
@@ -2474,7 +2477,7 @@ footer {
     left: 14px;
     font-family: 'Inter', sans-serif;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 600;
     color: white;
     letter-spacing: 1px;
     text-transform: lowercase;
@@ -2577,7 +2580,7 @@ footer {
 .panda-skin-logo {
     font-family: 'Inter', sans-serif;
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 600;
     color: rgba(255,255,255,0.6);
     letter-spacing: 1px;
     text-transform: lowercase;

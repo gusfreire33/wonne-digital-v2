@@ -1076,6 +1076,28 @@ header {
     padding: 40px 0;
     background: #000000;
     overflow: hidden;
+    position: relative;
+}
+
+.dashboard-carousel-section::before,
+.dashboard-carousel-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.dashboard-carousel-section::before {
+    left: 0;
+    background: linear-gradient(to right, #000000, transparent);
+}
+
+.dashboard-carousel-section::after {
+    right: 0;
+    background: linear-gradient(to left, #000000, transparent);
 }
 
 .dashboard-carousel-track {

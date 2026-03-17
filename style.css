@@ -1081,9 +1081,22 @@ header {
 }
 
 @media (max-width: 768px) {
+    .leadbox-section {
+        padding-top: calc(var(--section-spacing) + 120px);
+    }
+
     .leadbox-box {
-        padding: 32px 20px;
-        gap: 28px;
+        padding: 24px 20px 40px;
+        gap: 16px;
+    }
+
+    .leadbox-mockup {
+        width: 100%;
+        margin-top: -45%;
+    }
+
+    .dashboard-carousel-track {
+        animation-duration: 25s !important;
     }
 }
 
@@ -2302,7 +2315,8 @@ footer {
 
     /* Carrossel */
     .testimonials-carousel {
-        display: none !important;
+        display: flex !important;
+        padding: 40px 0;
     }
 
     /* Cases */

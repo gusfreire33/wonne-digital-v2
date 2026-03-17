@@ -877,6 +877,18 @@ header {
 .logo-center {
     text-align: center;
     margin-top: 48px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.logo-center::after {
+    content: '';
+    position: absolute;
+    inset: -60px;
+    background: radial-gradient(ellipse 50% 45% at center, transparent 20%, #000000 58%);
+    pointer-events: none;
+    z-index: 10001;
 }
 
 .wonne-logo {

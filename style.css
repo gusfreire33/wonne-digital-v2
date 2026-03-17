@@ -978,6 +978,7 @@ header {
 /* Leadbox CRM */
 .leadbox-section {
     padding: var(--section-spacing) 0;
+    padding-top: calc(var(--section-spacing) + 150px);
     background: #000000;
 }
 
@@ -985,24 +986,24 @@ header {
     background: url('Screenshots/Background da caixa de oferta.avif') center/cover no-repeat;
     border-radius: 24px;
     padding: 60px;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    overflow: hidden;
+    overflow: visible;
     max-width: 700px;
     margin: 0 auto;
 }
 
 .leadbox-mockup {
-    flex: 1;
-    min-width: 0;
+    width: 85%;
+    margin-top: -30%;
 }
 
 .leadbox-mockup img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
 }
 

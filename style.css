@@ -1086,7 +1086,7 @@ header {
 }
 
 .dashboard-carousel-track img {
-    height: 320px;
+    height: 220px;
     width: auto;
     border-radius: 16px;
     border: 2px solid #2a2a2a;
@@ -1098,10 +1098,10 @@ header {
 
 @keyframes dashboardScroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(-50%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(0);
     }
 }
 

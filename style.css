@@ -2453,11 +2453,8 @@ footer {
   gap: 14px;
 }
 
-.dor-x {
-  color: #ff3b30;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1;
+.dor-icon {
+  flex-shrink: 0;
 }
 
 .dor-card p {

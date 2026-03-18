@@ -2467,6 +2467,9 @@ footer {
   margin: 0;
 }
 
+.dor-box .cta-button {
+  margin-top: 35px;
+}
 
 /* O que Esperar - sub-headline */
 .o-que-esperar-sub {

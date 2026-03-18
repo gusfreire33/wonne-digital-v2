@@ -1983,6 +1983,17 @@ header {
   background-color: #000000;
 }
 
+.faq-badge {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
 .faq h2 {
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 900;
@@ -1999,69 +2010,45 @@ header {
 .faq-item {
   position: relative;
   z-index: 10000;
-  background: #2a2a2a url('Screenshots/Background das caixas 3.avif');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 12px;
-  border-radius: 14px;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.06);
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
-.faq-item:hover {
-  border-color: rgba(26, 157, 122, 0.3);
+.faq-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .faq-question {
-  padding: 24px 28px;
+  padding: 28px 0;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
-  position: relative;
-}
-
-.faq-question::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 3px;
-  background: var(--border-color);
-  transform: scaleY(0);
-  transition: transform 0.3s ease;
-}
-
-.faq-item:hover .faq-question::before,
-.faq-item.active .faq-question::before {
-  transform: scaleY(1);
-  background: var(--chrome-gradient);
-}
-
-.faq-question:hover {
-  background: rgba(255, 255, 255, 0.02);
 }
 
 .faq-question h3 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+}
+
+.faq-item:hover .faq-question h3,
+.faq-item.active .faq-question h3 {
   color: var(--text-light);
 }
 
-.faq-toggle {
-  font-size: 28px;
-  font-weight: 300;
-  color: var(--text-muted);
-  transition: transform 0.3s ease;
+.faq-chevron {
+  color: rgba(255, 255, 255, 0.4);
+  transition: transform 0.3s ease, color 0.3s ease;
+  flex-shrink: 0;
 }
 
-.faq-item.active .faq-toggle {
-  transform: rotate(45deg);
+.faq-item.active .faq-chevron {
+  transform: rotate(180deg);
   color: var(--accent);
 }
 
@@ -2075,7 +2062,7 @@ header {
 
 .faq-item.active .faq-answer {
   max-height: 500px;
-  padding: 0 28px 24px 28px;
+  padding: 0 0 24px 0;
 }
 
 .faq-answer p {

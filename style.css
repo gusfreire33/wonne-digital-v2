@@ -2419,41 +2419,52 @@ footer {
   background: var(--bg-dark);
 }
 
-.agitacao-dor h2 {
+.dor-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: url('Screenshots/Background das caixas 3.avif') center/cover no-repeat;
+  border-radius: 20px;
+  padding: 50px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dor-box h2 {
   text-align: center;
   font-size: 2rem;
   color: var(--text-light);
   margin-bottom: 40px;
 }
 
-.dor-lista {
-  list-style: none;
-  max-width: 700px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+.dor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.dor-lista li {
-  position: relative;
-  padding: 18px 24px 18px 50px;
-  background: rgba(255, 59, 48, 0.06);
-  border: 1px solid rgba(255, 59, 48, 0.2);
-  border-radius: 12px;
-  color: var(--text-muted);
-  font-size: 1rem;
-  line-height: 1.6;
+.dor-card {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 59, 48, 0.15);
+  border-radius: 14px;
+  padding: 28px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
 }
 
-.dor-lista li::before {
-  content: '✗';
-  position: absolute;
-  left: 20px;
-  top: 18px;
+.dor-x {
   color: #ff3b30;
+  font-size: 1.6rem;
   font-weight: 700;
-  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.dor-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* Garantia */
@@ -2583,6 +2594,19 @@ footer {
   .cases-grid {
     grid-template-columns: 1fr !important;
     gap: 20px;
+  }
+
+  /* Agitação de Dor Mobile */
+  .dor-box {
+    padding: 30px 18px;
+  }
+
+  .dor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dor-box h2 {
+    font-size: 1.5rem;
   }
 
   /* Fundador */

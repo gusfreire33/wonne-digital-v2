@@ -115,6 +115,24 @@ document.addEventListener('DOMContentLoaded', function() {
             // Continua mesmo se houver erro no webhook
         }
 
+        // Push dataLayer — Enhanced Conversions (Google Ads + GA4)
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'generate_lead',
+            'user_data': {
+                'email': email,
+                'phone_number': phone,
+                'address': {
+                    'first_name': name.split(' ')[0],
+                    'last_name': name.split(' ').slice(1).join(' ') || ''
+                }
+            },
+            'lead_name': name,
+            'lead_email': email,
+            'lead_phone': phone,
+            'lead_source': 'lp_wonne_v2'
+        });
+
         // Mensagem formatada para WhatsApp
         const message = `Olá! Gostaria de falar com um especialista.%0A%0A` +
                        `*Nome:* ${name}%0A` +

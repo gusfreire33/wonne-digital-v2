@@ -2467,33 +2467,6 @@ footer {
   margin: 0;
 }
 
-/* Garantia */
-.garantia-section {
-  padding: 60px 0;
-  background: var(--bg-dark);
-}
-
-.garantia-box {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 40px;
-  background: rgba(26, 157, 122, 0.06);
-  border: 1px solid rgba(26, 157, 122, 0.25);
-  border-radius: 16px;
-}
-
-.garantia-box h2 {
-  font-size: 1.8rem;
-  color: var(--accent);
-  margin-bottom: 20px;
-}
-
-.garantia-box p {
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
 
 /* O que Esperar - sub-headline */
 .o-que-esperar-sub {

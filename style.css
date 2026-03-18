@@ -2442,8 +2442,8 @@ footer {
 }
 
 .dor-card {
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 59, 48, 0.15);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
   padding: 28px 24px;
   text-align: center;

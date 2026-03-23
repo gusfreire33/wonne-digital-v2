@@ -1628,7 +1628,7 @@ header {
 
 .close-friends-box {
   max-width: 800px;
-  margin: -180px auto 0;
+  margin: -250px auto 0;
   position: relative;
   z-index: 2;
   background: #2a2a2a url('Screenshots/Background das caixas 3.avif');
@@ -1640,6 +1640,7 @@ header {
   border: 1px solid rgba(26, 157, 122, 0.3);
   overflow: visible;
   box-shadow:
+    0 -40px 60px 20px rgba(0, 0, 0, 0.85),
     0 24px 64px rgba(0, 0, 0, 0.7),
     0 0 60px rgba(26, 157, 122, 0.06);
   text-align: center;

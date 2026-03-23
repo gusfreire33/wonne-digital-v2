@@ -1607,35 +1607,30 @@ header {
 
 /* Close Friends Oferta */
 .close-friends-oferta {
-  padding: var(--section-spacing) 0;
+  padding: 60px 0 var(--section-spacing);
+  margin-top: 60px;
   background: #000000;
   position: relative;
-  overflow: hidden;
 }
 
 .oferta-mockup-wrapper {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 950px;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
   pointer-events: none;
 }
 
 .oferta-mockup-bg {
   width: 100%;
+  max-width: 850px;
   height: auto;
   display: block;
-  opacity: 0.85;
-  mask-image: radial-gradient(ellipse 65% 55% at center 45%, black 25%, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse 65% 55% at center 45%, black 25%, transparent 70%);
+  mask-image: linear-gradient(to bottom, black 40%, transparent 95%);
+  -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 95%);
 }
 
 .close-friends-box {
   max-width: 800px;
-  margin: 0 auto;
+  margin: -120px auto 0;
   position: relative;
   z-index: 2;
   background: #2a2a2a url('Screenshots/Background das caixas 3.avif');

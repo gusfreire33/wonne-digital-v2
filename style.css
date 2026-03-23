@@ -1611,9 +1611,31 @@ header {
   background: #000000;
 }
 
+.oferta-mockup-wrapper {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130%;
+  max-width: 1100px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.oferta-mockup-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.8;
+  mask-image: radial-gradient(ellipse 60% 50% at center 40%, black 20%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 50% at center 40%, black 20%, transparent 70%);
+}
+
 .close-friends-box {
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  z-index: 10000;
   background: #2a2a2a url('Screenshots/Background das caixas 3.avif');
   background-size: 100% 100%;
   background-position: center;
@@ -1621,8 +1643,6 @@ header {
   padding: 80px 48px 64px;
   border-radius: 24px;
   border: 1px solid rgba(26, 157, 122, 0.3);
-  position: relative;
-  z-index: 10000;
   overflow: visible;
   box-shadow:
     0 24px 64px rgba(0, 0, 0, 0.7),
@@ -2043,7 +2063,9 @@ header {
 
 .faq-chevron {
   color: rgba(255, 255, 255, 0.4);
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
   flex-shrink: 0;
 }
 

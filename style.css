@@ -1609,16 +1609,18 @@ header {
 .close-friends-oferta {
   padding: var(--section-spacing) 0;
   background: #000000;
+  position: relative;
+  overflow: visible;
 }
 
 .oferta-mockup-wrapper {
   position: absolute;
-  top: -200px;
+  top: 0;
   left: 50%;
-  transform: translateX(-50%);
-  width: 130%;
-  max-width: 1100px;
-  z-index: 0;
+  transform: translate(-50%, -15%);
+  width: 100%;
+  max-width: 950px;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -1626,16 +1628,16 @@ header {
   width: 100%;
   height: auto;
   display: block;
-  opacity: 0.8;
-  mask-image: radial-gradient(ellipse 60% 50% at center 40%, black 20%, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse 60% 50% at center 40%, black 20%, transparent 70%);
+  opacity: 0.85;
+  mask-image: radial-gradient(ellipse 65% 55% at center 45%, black 25%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 65% 55% at center 45%, black 25%, transparent 70%);
 }
 
 .close-friends-box {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
-  z-index: 10000;
+  z-index: 2;
   background: #2a2a2a url('Screenshots/Background das caixas 3.avif');
   background-size: 100% 100%;
   background-position: center;

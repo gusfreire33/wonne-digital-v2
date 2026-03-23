@@ -1607,18 +1607,17 @@ header {
 
 /* Close Friends Oferta */
 .close-friends-oferta {
-  padding: 180px 0 var(--section-spacing);
+  padding: var(--section-spacing) 0;
   background: #000000;
   position: relative;
-  overflow: visible;
-  z-index: 0;
+  overflow: hidden;
 }
 
 .oferta-mockup-wrapper {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -25%);
+  transform: translateX(-50%);
   width: 100%;
   max-width: 950px;
   z-index: 1;

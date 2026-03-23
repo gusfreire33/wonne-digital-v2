@@ -1617,7 +1617,7 @@ header {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -15%);
+  transform: translate(-50%, -40%);
   width: 100%;
   max-width: 950px;
   z-index: 1;

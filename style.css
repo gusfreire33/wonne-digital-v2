@@ -1607,8 +1607,7 @@ header {
 
 /* Close Friends Oferta */
 .close-friends-oferta {
-  padding: 60px 0 var(--section-spacing);
-  margin-top: 60px;
+  padding: 80px 0 var(--section-spacing);
   background: #000000;
   position: relative;
 }
@@ -1617,20 +1616,19 @@ header {
   display: flex;
   justify-content: center;
   pointer-events: none;
+  padding: 0 20px;
 }
 
 .oferta-mockup-bg {
   width: 100%;
-  max-width: 850px;
+  max-width: 900px;
   height: auto;
   display: block;
-  mask-image: linear-gradient(to bottom, black 40%, transparent 95%);
-  -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 95%);
 }
 
 .close-friends-box {
   max-width: 800px;
-  margin: -120px auto 0;
+  margin: -180px auto 0;
   position: relative;
   z-index: 2;
   background: #2a2a2a url('Screenshots/Background das caixas 3.avif');
